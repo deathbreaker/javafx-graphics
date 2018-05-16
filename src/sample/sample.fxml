@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.canvas.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Canvas fx:id="canvas" height="500.0" layoutY="94.0" width="600.0">
+         <effect>
+            <Lighting bumpInput="$null">
+               <light>
+                  <Light.Distant color="#dd9292" />
+               </light>
+            </Lighting>
+         </effect>
+      </Canvas>
+      <Button fx:id="btn_otec" layoutX="25.0" layoutY="34.0" mnemonicParsing="false" onAction="#action_otec" prefHeight="30.0" prefWidth="72.0" text="Otec" />
+      <Button fx:id="btn_dite" layoutX="114.0" layoutY="34.0" mnemonicParsing="false" onAction="#action_dite" prefHeight="30.0" prefWidth="72.0" text="Dítě" />
+      <Button fx:id="btn_pes" layoutX="215.0" layoutY="34.0" mnemonicParsing="false" onAction="#action_pes" prefHeight="30.0" prefWidth="72.0" text="Pes" />
+      <Button fx:id="btn_cervena" layoutX="414.0" layoutY="34.0" mnemonicParsing="false" onAction="#action_cervena" prefHeight="30.0" prefWidth="72.0" text="Červená" />
+      <Button fx:id="btn_zelena" layoutX="507.0" layoutY="34.0" mnemonicParsing="false" onAction="#action_zelena" prefHeight="30.0" prefWidth="72.0" text="Zelená" />
+      <Button fx:id="btn_modra" layoutX="314.0" layoutY="34.0" mnemonicParsing="false" onAction="#action_modra" prefHeight="30.0" prefWidth="72.0" text="Modrá" />
+   </children>
+</AnchorPane>
